@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Codificação -->
+    <meta charset="UTF-8">
+    <title>Consulta de CRM</title>
+
+    <!-- Link Google Fonts -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600' type="text/css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <div class="page-header">
+        <h1>Consulta de CRM<small><br/>Sistemas de Informação - 2016</small></h1>
+    </div>
+
+    <!-- Navigation bar -->
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="index.html">Inicio</a></li>
+        <li role="presentation"><a href="register.html">Cadastro</a></li>
+        <li role="presentation"><a href="chart.html">Relatório</a></li>
+    </ul>
+
+    <p/>
+
+    <div class="container" id="center">
+        <form class="form-inline">
+            <div class="form-group">
+                <!-- Imagem -->
+                <img src="imgs/crm.png"/>
+                <!-- Campo de texto -->
+                <input type="text" class="form-control" id="crmNumber" placeholder="Código CRM">
+            </div>
+            <!-- Botão Pesquisar -->
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </form>
+    </div>
+    <p/>
+    <!-- Table -->
+    <div class="container">
+        <table id="tblList" class="table table-bordered">             
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome do Médico</th>
+                    <th>Estado</th>
+                    <th>Especialidade</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>           
+        </table>
+    </div>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
