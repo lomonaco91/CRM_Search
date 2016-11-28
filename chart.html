@@ -1,64 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
-   <meta charset="UTF-8">
-   <title>Consulta de CRM</title>
+  <meta charset="UTF-8">
+  <title>Consulta de CRM</title>
 
-    <!-- Link Google Fonts -->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600' type="text/css">
+  <!-- Link Google Fonts -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600' type="text/css">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Gráfico --> 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {  
-          var data = google.visualization.arrayToDataTable([
-          ['Estados', 'Quantidade' ],
-          ['Minas Gerais', 5 ],
-          ['São Paulo', 10 ],
-          ['Rio de Janeiro', 4 ],
-          ['Espirito Santo', 3 ]
-        ]);
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-        var options = {
-          chart: {
-            title: 'Relação de Número de Médicos por Estado',
-            subtitle: 'O gráfico representa o número de médicos cadastrados de cada estado da região Sudeste',
-          }
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
-        chart.draw(data, options);
-      }
-    </script>
+  <!-- Gráfico -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
+
 <body>
-    
-    <div class="page-header">
-        <h1>Consulta de CRM<small><br/>Sistemas de Informação - 2016</small></h1>
-    </div>
-    
-    <!-- Navigation bar -->
-    <ul class="nav nav-tabs">
-        <li role="presentation"><a href="index.html">Inicio</a></li>
-        <li role="presentation"><a href="register.html">Cadastro</a></li>
-        <li role="presentation" class="active"><a href="chart.html">Relatório</a></li>
-    </ul>
 
-    <div id="columnchart_material" class="center-chart"></div>
-    
-     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+  <div class="page-header">
+    <h1>Consulta de CRM<small><br/>Sistemas de Informação - 2016</small></h1>
+  </div>
 
-    <!-- Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Navigation bar -->
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a href="index.html">Inicio</a></li>
+    <li role="presentation"><a href="register.html">Cadastro</a></li>
+    <li role="presentation" class="active"><a href="chart.html">Relatório</a></li>
+  </ul>
+
+  <div id="columnchart_material" class="center-chart"></div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="js/chart.js"></script>
 </body>
+
 </html>
